@@ -1,7 +1,7 @@
 name: flutter_extensions
 description: "A comprehensive collection of Dart and Flutter extensions to simplify and enhance your development experience."
 version: 1.0.0
-homepage: null
+homepage: https://github.com/eliseyOzerov/flutter_extensions
 
 environment:
   sdk: ^3.5.1
