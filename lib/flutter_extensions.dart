@@ -1,0 +1,23 @@
+library flutter_extensions;
+
+export 'alignment.dart';
+export 'boolean.dart';
+export 'build_context.dart';
+export 'byte_data.dart';
+export 'collections.dart';
+export 'date_time.dart';
+export 'duration.dart';
+export 'edge_insets.dart';
+export 'focus_node.dart';
+export 'future.dart';
+export 'key.dart';
+export 'numbers.dart';
+export 'offset.dart';
+export 'page_controller.dart';
+export 'rect.dart';
+export 'shadow.dart';
+export 'size.dart';
+export 'stream.dart';
+export 'string.dart';
+export 'text.dart';
+export 'widget.dart';
