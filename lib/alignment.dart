@@ -1,5 +1,5 @@
+import 'package:better_extensions/offset.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_extensions/offset.dart';
 
 extension AlignmentExtension on Alignment {
   static List<Alignment> get top => [Alignment.topLeft, Alignment.topCenter, Alignment.topRight];

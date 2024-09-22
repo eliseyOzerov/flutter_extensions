@@ -1,5 +1,5 @@
+import 'package:better_extensions/build_context.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_extensions/build_context.dart';
 
 extension FocusNodeExtension on FocusNode {
   Rect getRenderRect({RenderObject? ancestor, bool local = false}) {
