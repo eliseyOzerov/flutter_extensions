@@ -16,6 +16,7 @@ export 'offset.dart';
 export 'page_controller.dart';
 export 'rect.dart';
 export 'shadow.dart';
+export 'shortcuts.dart';
 export 'size.dart';
 export 'stream.dart';
 export 'string.dart';
