@@ -19,11 +19,17 @@ extension BuildContextExtension on BuildContext {
     return diagonalInches >= 7;
   }
 
-  Rect getRenderRect({RenderObject? ancestor, bool local = false}) {
+  Rect getRenderRect({bool local = false}) {
     final RenderBox? renderBox = findRenderObject() as RenderBox?;
     if (renderBox == null) return Rect.zero;
-    final Offset offset = local ? renderBox.globalToLocal(Offset.zero, ancestor: ancestor) : renderBox.localToGlobal(Offset.zero, ancestor: ancestor);
-    final Size size = renderBox.size;
-    return offset & size;
+
+    // Determine the ancestor based on the local flag
+    final RenderObject? ancestor = local ? renderBox.parent : null;
+
+    // Calculate the offset
+    final Offset offset = renderBox.localToGlobal(Offset.zero, ancestor: ancestor);
+    final Rect result = offset & renderBox.size;
+
+    return result;
   }
 }
